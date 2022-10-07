@@ -1,11 +1,11 @@
   applications:
-  - name: onlinecourse
+  - name: onlinecourse-poore
     routes:
-      - route: host.domain
+      - route: poore000.mybluemix.net 
     memory: 128M
     buildpack: python_buildpack
-  - name: onlinecourse-nginx
+  - name: host.onlinecourse-poore-nginx
     routes:
-      - route: host.domain/static
+      - route: poore000.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
